@@ -32,10 +32,10 @@ else { // Use localStorage
 /* */   // APPLICATION SPECIFIC CODE
 /* */
 /* */   // URI of the sync server component
-/* */   var server_sync_uri = '/items/sync.json';
+/* */   var server_sync_uri = '/api/item';
 /* */
 /* */   // The database table
-/* */   var ItemEntity = persistence.define('Item4', {
+/* */   var ItemEntity = persistence.define('Item5', {
 /* */     // Specific attributes from this entity (**can be modified**)
 /* */     name: "TEXT",
 /* */     category: "TEXT",

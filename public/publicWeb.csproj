@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0FE88431-55D7-4BE4-A77A-2509CD2ED9A0}</ProjectGuid>
+    <ProjectTypeGuids>{E3E379DF-F4C6-4180-9B81-6769533ABE47};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>publicWeb</RootNamespace>
+    <AssemblyName>publicWeb</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.4.1.10331.0\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Json, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\System.Json.4.0.20126.16343\lib\net40\System.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\System.Net.Http.2.0.20126.16343\lib\net40\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\System.Net.Http.Formatting.4.0.20126.16343\lib\net40\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\System.Net.Http.2.0.20126.16343\lib\net40\System.Net.Http.WebRequest.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Helpers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\AspNetWebPages.Core.2.0.20126.16343\lib\net40\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\AspNetWebApi.Core.4.0.20126.16343\lib\net40\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.Common, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\System.Web.Http.Common.4.0.20126.16343\lib\net40\System.Web.Http.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\AspNetWebApi.4.0.20126.16343\lib\net40\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\AspNetMvc.4.0.20126.16343\lib\net40\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.Web.Optimization.1.0.0-beta\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Providers">
+      <HintPath>..\packages\System.Web.Providers.Core.1.0\lib\net40\System.Web.Providers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\AspNetRazor.Core.2.0.20126.16343\lib\net40\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\AspNetWebPages.Core.2.0.20126.16343\lib\net40\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\AspNetWebPages.Core.2.0.20126.16343\lib\net40\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\AspNetWebPages.Core.2.0.20126.16343\lib\net40\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ItemController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ItemResponse.cs" />
+    <Compile Include="Models\ItemModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="404.html" />
+    <Content Include="422.html" />
+    <Content Include="500.html" />
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="images\bg-input-focus.png" />
+    <Content Include="images\bg-input.png" />
+    <Content Include="images\sprite.png" />
+    <Content Include="images\tipsy.gif" />
+    <Content Include="javascripts\app\application.js" />
+    <Content Include="javascripts\app\collections\items.js" />
+    <Content Include="javascripts\app\controllers\items.js" />
+    <Content Include="javascripts\app\models\item.js" />
+    <Content Include="javascripts\app\server.push.js" />
+    <Content Include="javascripts\app\sync.js" />
+    <Content Include="javascripts\app\views\edit.js" />
+    <Content Include="javascripts\app\views\index.js" />
+    <Content Include="javascripts\app\views\notice.js" />
+    <Content Include="javascripts\app\views\show.js" />
+    <Content Include="javascripts\backbone.js" />
+    <Content Include="javascripts\jquery.dotimeout.js" />
+    <Content Include="javascripts\jquery.min.js" />
+    <Content Include="javascripts\jquery.tipsy.js" />
+    <Content Include="javascripts\jquery.uniform.min.js" />
+    <Content Include="javascripts\json2.js" />
+    <Content Include="javascripts\persistence\persistence.js" />
+    <Content Include="javascripts\persistence\persistence.store.memory.js" />
+    <Content Include="javascripts\persistence\persistence.store.sql.js" />
+    <Content Include="javascripts\persistence\persistence.store.websql.js" />
+    <Content Include="javascripts\persistence\persistence.sync.js" />
+    <Content Include="javascripts\rails.js" />
+    <Content Include="javascripts\underscore.js" />
+    <Content Include="robots.txt" />
+    <Content Include="stylesheets\base.css" />
+    <Content Include="stylesheets\formtastic.css" />
+    <Content Include="stylesheets\images\about-this-folder.txt" />
+    <Content Include="stylesheets\images\ui-anim_basic_16x16.gif" />
+    <Content Include="stylesheets\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="stylesheets\images\ui-bg_flat_0_f8f8f7_40x100.png" />
+    <Content Include="stylesheets\images\ui-bg_flat_100_f8f8f7_40x100.png" />
+    <Content Include="stylesheets\images\ui-bg_flat_20_e6e6e0_40x100.png" />
+    <Content Include="stylesheets\images\ui-bg_flat_50_aaaaaa_40x100.png" />
+    <Content Include="stylesheets\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="stylesheets\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="stylesheets\images\ui-bg_highlight-hard_100_f8f8f7_1x100.png" />
+    <Content Include="stylesheets\images\ui-icons_000000_256x240.png" />
+    <Content Include="stylesheets\images\ui-icons_222222_256x240.png" />
+    <Content Include="stylesheets\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="stylesheets\images\ui-icons_454545_256x240.png" />
+    <Content Include="stylesheets\images\ui-icons_acaca0_256x240.png" />
+    <Content Include="stylesheets\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="stylesheets\jquery.tipsy.css" />
+    <Content Include="stylesheets\override.css" />
+    <Content Include="stylesheets\themes\activo\fonts\museo700-regular-webfont.svg" />
+    <Content Include="stylesheets\themes\activo\fonts\museosans_500-webfont.svg" />
+    <Content Include="stylesheets\themes\activo\fonts\museosans_500_italic-webfont.svg" />
+    <Content Include="stylesheets\themes\activo\images\arrow.png" />
+    <Content Include="stylesheets\themes\activo\images\avatar.png" />
+    <Content Include="stylesheets\themes\activo\images\bgd.jpg" />
+    <Content Include="stylesheets\themes\activo\images\boxbar-background.png" />
+    <Content Include="stylesheets\themes\activo\images\breadcrumb.png" />
+    <Content Include="stylesheets\themes\activo\images\button-background-active.png" />
+    <Content Include="stylesheets\themes\activo\images\button-background.png" />
+    <Content Include="stylesheets\themes\activo\images\icons\24\about-this-folder.txt" />
+    <Content Include="stylesheets\themes\activo\images\icons\24\anchor-hover.png" />
+    <Content Include="stylesheets\themes\activo\images\icons\24\anchor.png" />
+    <Content Include="stylesheets\themes\activo\images\icons\24\cross-hover.png" />
+    <Content Include="stylesheets\themes\activo\images\icons\24\cross.png" />
+    <Content Include="stylesheets\themes\activo\images\icons\24\download-hover.png" />
+    <Content Include="stylesheets\themes\activo\images\icons\24\download.png" />
+    <Content Include="stylesheets\themes\activo\images\icons\24\edit-hover.png" />
+    <Content Include="stylesheets\themes\activo\images\icons\24\edit.png" />
+    <Content Include="stylesheets\themes\activo\images\icons\24\export-hover.png" />
+    <Content Include="stylesheets\themes\activo\images\icons\24\export.png" />
+    <Content Include="stylesheets\themes\activo\images\icons\24\show-hover.png" />
+    <Content Include="stylesheets\themes\activo\images\icons\24\show.png" />
+    <Content Include="stylesheets\themes\activo\images\icons\about-this-folder.txt" />
+    <Content Include="stylesheets\themes\activo\images\icons\add.png" />
+    <Content Include="stylesheets\themes\activo\images\icons\application_edit.png" />
+    <Content Include="stylesheets\themes\activo\images\icons\calendar-hover.png" />
+    <Content Include="stylesheets\themes\activo\images\icons\calendar.png" />
+    <Content Include="stylesheets\themes\activo\images\icons\cross.png" />
+    <Content Include="stylesheets\themes\activo\images\icons\delete.png" />
+    <Content Include="stylesheets\themes\activo\images\icons\download.png" />
+    <Content Include="stylesheets\themes\activo\images\icons\edit.png" />
+    <Content Include="stylesheets\themes\activo\images\icons\key.png" />
+    <Content Include="stylesheets\themes\activo\images\icons\pdf.png" />
+    <Content Include="stylesheets\themes\activo\images\icons\search.png" />
+    <Content Include="stylesheets\themes\activo\images\icons\see-less.png" />
+    <Content Include="stylesheets\themes\activo\images\icons\see-more.png" />
+    <Content Include="stylesheets\themes\activo\images\icons\send-mail.png" />
+    <Content Include="stylesheets\themes\activo\images\icons\show.png" />
+    <Content Include="stylesheets\themes\activo\images\icons\tick.png" />
+    <Content Include="stylesheets\themes\activo\images\icons\upload.png" />
+    <Content Include="stylesheets\themes\activo\images\logo.png" />
+    <Content Include="stylesheets\themes\activo\images\messages\error.png" />
+    <Content Include="stylesheets\themes\activo\images\messages\notice.png" />
+    <Content Include="stylesheets\themes\activo\images\messages\warning.png" />
+    <Content Include="stylesheets\themes\activo\images\search-button.png" />
+    <Content Include="stylesheets\themes\activo\images\session\about-this-folder.txt" />
+    <Content Include="stylesheets\themes\activo\images\session\account.png" />
+    <Content Include="stylesheets\themes\activo\images\session\config.png" />
+    <Content Include="stylesheets\themes\activo\images\session\home.png" />
+    <Content Include="stylesheets\themes\activo\images\session\logout.png" />
+    <Content Include="stylesheets\themes\activo\style.css" />
+    <Content Include="stylesheets\uniform.default.css" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="application.manifest.sample" />
+    <None Include="stylesheets\themes\activo\attrtastic_changes.sass" />
+    <None Include="stylesheets\themes\activo\fonts.sass" />
+    <None Include="stylesheets\themes\activo\fonts\museo700-regular-webfont.eot" />
+    <None Include="stylesheets\themes\activo\fonts\museo700-regular-webfont.ttf" />
+    <None Include="stylesheets\themes\activo\fonts\museo700-regular-webfont.woff" />
+    <None Include="stylesheets\themes\activo\fonts\museosans_500-webfont.eot" />
+    <None Include="stylesheets\themes\activo\fonts\museosans_500-webfont.ttf" />
+    <None Include="stylesheets\themes\activo\fonts\museosans_500-webfont.woff" />
+    <None Include="stylesheets\themes\activo\fonts\museosans_500_italic-webfont.eot" />
+    <None Include="stylesheets\themes\activo\fonts\museosans_500_italic-webfont.ttf" />
+    <None Include="stylesheets\themes\activo\fonts\museosans_500_italic-webfont.woff" />
+    <None Include="stylesheets\themes\activo\formtastic_changes.sass" />
+    <None Include="stylesheets\themes\activo\mixins.sass" />
+    <None Include="stylesheets\themes\activo\style.sass" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\_Edit.cshtml" />
+    <Content Include="Views\Home\_Index.cshtml" />
+    <Content Include="Views\Home\_Show.cshtml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>6280</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

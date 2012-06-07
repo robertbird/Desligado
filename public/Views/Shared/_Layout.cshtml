@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="@System.Web.Optimization.BundleTable.Bundles.ResolveBundleUrl("~/stylesheets/css")" rel="stylesheet" type="text/css" />
+    <link href="@System.Web.Optimization.BundleTable.Bundles.ResolveBundleUrl("~/stylesheets/themes/activo/css")" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="@Url.Content("~/javascripts/jquery.min.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/javascripts/json2.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/javascripts/jquery.dotimeout.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/javascripts/jquery.tipsy.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/javascripts/jquery.uniform.min.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/javascripts/underscore.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/javascripts/backbone.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/javascripts/rails.js")"></script>
+
+    @*<script src="@System.Web.Optimization.BundleTable.Bundles.ResolveBundleUrl("~/javascripts/persistence/js")"></script>*@
+    <script type="text/javascript" src="@Url.Content("~/javascripts/persistence/persistence.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/javascripts/persistence/persistence.store.sql.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/javascripts/persistence/persistence.store.websql.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/javascripts/persistence/persistence.store.memory.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/javascripts/persistence/persistence.sync.js")"></script>
+
+    <script type="text/javascript" src="@Url.Content("~/javascripts/app/sync.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/javascripts/app/server.push.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/javascripts/app/application.js")"></script>
+    @*<script src="@System.Web.Optimization.BundleTable.Bundles.ResolveBundleUrl("~/javascripts/js")"></script>*@
+    <script type="text/javascript" src="@Url.Content("~/javascripts/app/models/item.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/javascripts/app/collections/items.js")"></script>
+
+    @*<script src="@System.Web.Optimization.BundleTable.Bundles.ResolveBundleUrl("~/javascripts/app/views/js")"></script>*@
+    <script type="text/javascript" src="@Url.Content("~/javascripts/app/views/index.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/javascripts/app/views/edit.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/javascripts/app/views/notice.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/javascripts/app/views/show.js")"></script>
+
+    <script type="text/javascript" src="@Url.Content("~/javascripts/app/controllers/items.js")"></script>
+
+</head>
+<body>
+    @RenderBody()
+</body>
+</html>

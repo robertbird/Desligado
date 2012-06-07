@@ -1,0 +1,33 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<div id="notice"></div>
+<div id="app"></div>
+
+<div style="display:none">
+
+<script type="text/html" id='usageList'>
+
+</script>
+
+    <script type="text/html" id="tmplIndex">
+        @Html.Partial("_Index")
+    </script>
+    <script type="text/html" id="tmplShow">
+        @Html.Partial("_Show")
+    </script>
+    <script type="text/html" id="tmplEdit">
+        @Html.Partial("_Edit")
+    </script>
+</div>
+
+<script type="text/javascript">
+    var JST = {};
+    JST.index = _.template($('#tmplIndex').html());
+    JST.edit = _.template($('#tmplEdit').html());
+    JST.show = _.template($('#tmplShow').html());
+    $(function () {
+        App.init();
+    });
+</script>
