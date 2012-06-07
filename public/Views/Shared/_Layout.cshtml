@@ -1,11 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html manifest="/Home/ApplicationCache">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
-    <link href="@System.Web.Optimization.BundleTable.Bundles.ResolveBundleUrl("~/stylesheets/css")" rel="stylesheet" type="text/css" />
-    <link href="@System.Web.Optimization.BundleTable.Bundles.ResolveBundleUrl("~/stylesheets/themes/activo/css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/stylesheets/base.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/stylesheets/formtastic.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("/stylesheets/jquery.tipsy.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/stylesheets/uniform.default.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/stylesheets/themes/activo/style.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/stylesheets/override.css")" rel="stylesheet" type="text/css" />
+
     <script type="text/javascript" src="@Url.Content("~/javascripts/jquery.min.js")"></script>
     <script type="text/javascript" src="@Url.Content("~/javascripts/json2.js")"></script>
     <script type="text/javascript" src="@Url.Content("~/javascripts/jquery.dotimeout.js")"></script>

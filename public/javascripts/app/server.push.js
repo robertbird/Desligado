@@ -24,7 +24,7 @@ $(function() {
         console.log("Faye is unavailable, websockets won't be used. Using timer instead.");
         window.setInterval(function() { // Timer instead
             syncAndRender();
-        }, 5000); // 5 seconds
+        }, 45000); // 5 seconds
 
     // Using websockets with faye
     } else {

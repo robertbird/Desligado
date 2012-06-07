@@ -16,5 +16,11 @@ namespace publicWeb.Controllers
             return View();
         }
 
+        public ActionResult ApplicationCache()
+        {
+            //Response.Cache.SetMaxAge(TimeSpan.Zero);
+            return View();
+        }
+
     }
 }

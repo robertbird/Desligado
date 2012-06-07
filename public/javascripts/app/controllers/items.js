@@ -55,7 +55,7 @@ App.Controllers.Items = Backbone.Controller.extend({
 
     // Delete an item (named 'destroy' instead of 'delete' because safari was complaining about it)
     destroy: function(id) {
-        var item = new Item({ id: id });
+        var item = new Item({ id: id, deleted: true });
         item.destroy({
             success: function(model, response) {
                 new App.Views.Notice({ message: 'Action completed successfully.' });

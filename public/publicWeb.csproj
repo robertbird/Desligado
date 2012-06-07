@@ -256,7 +256,6 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="application.manifest.sample" />
     <None Include="stylesheets\themes\activo\attrtastic_changes.sass" />
     <None Include="stylesheets\themes\activo\fonts.sass" />
     <None Include="stylesheets\themes\activo\fonts\museo700-regular-webfont.eot" />
@@ -275,6 +274,7 @@
     <Content Include="Views\Home\_Edit.cshtml" />
     <Content Include="Views\Home\_Index.cshtml" />
     <Content Include="Views\Home\_Show.cshtml" />
+    <Content Include="Views\Home\ApplicationCache.cshtml" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
